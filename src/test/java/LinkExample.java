@@ -45,7 +45,7 @@ public class LinkExample {
         WebElement duplicate= driver.findElement(By.linkText("Go to Dashboard"));
         duplicate.click();
         driver.navigate().back();
-        
+
         //05) count full pages links
         List<WebElement> countPageLink = driver.findElements(By.tagName("a"));
         int pageLinkCount = countPageLink.size();
